@@ -1,0 +1,29 @@
+/*------------------------------------- navbar */
+
+.navbar {
+    background-color: black;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a:hover, .navbar a:active, .navbar a:focus {
+    text-decoration: none;
+    color: violet;
+}
+
+
+/*------------------------------------- footer */
+
+
+
+/*------------------------------------- index main content */
+
+
+
+/*------------------------------------- navbar */
+
+
+
+/*------------------------------------- navbar */
