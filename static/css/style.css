@@ -5,12 +5,12 @@
 }
 
 .navbar a {
-    color: white;
+    color: white !important;
 }
 
-.navbar a:hover, .navbar a:active, .navbar a:focus {
-    text-decoration: none;
-    color: violet;
+.navbar-dark a:hover, .navbar a:active, .navbar a:focus {
+    text-decoration: none !important;
+    color: violet !important;
 }
 
 
