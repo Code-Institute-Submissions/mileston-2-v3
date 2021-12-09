@@ -21,6 +21,20 @@
 
 /*------------------------------------- index main content */
 
+.hero-img {
+    background: url("../images/hero-dragon.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 920px;
+}
+
+.hero {
+    padding: 0;
+    background-color: rgba(136, 124, 124, 0.528);
+    height: 920px;
+}
 
 
 /*------------------------------------- navbar */
