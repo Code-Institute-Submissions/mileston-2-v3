@@ -1,0 +1,1 @@
+var howToPlay = document.getElementById("htp");
