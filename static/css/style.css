@@ -61,7 +61,7 @@
 }
 
 .htp-popup {
-    /*display: none;*/
+    display: none;
     background-color: rgba(36, 34, 34, 0.528);
     position: fixed;
     width: 100%;
