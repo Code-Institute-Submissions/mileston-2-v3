@@ -12,3 +12,9 @@ function startGame() {
     dragonHeight -= gravity
 }
 setInterval(startGame, 10)
+
+function flap() {
+    if (dragonHeight < 700) dragonHeight += 150
+    dragon.style.bottom = dragonHeight + "px"
+    console.log(dragonHeight)
+}
