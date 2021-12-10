@@ -92,6 +92,13 @@ height: 50px;
 background-color: violet;
 }
 
+.water-pipe {
+    width: 200px;
+    height: 300px;
+    background-color: turquoise;
+    position: absolute;
+}
+
 .ground {
     width: 100%;
     height: 200px;
