@@ -26,8 +26,21 @@ function flap() {
 /*------------------------------------------- create water pipe function */
 
 function createWaterPipe() {
-    const WaterPipe = document.createElement('div')
-    WaterPipe.classList.add("water-pipe")
-    gameContainer.appendChild(WaterPipe)
+    let waterPipeLeft = 500
+    let randomHeight = Math.random() * 150
+    let waterPipeHeight = randomHeight
+
+    const waterPipe = document.createElement('div')
+
+    waterPipe.classList.add("water-pipe")
+    gameContainer.appendChild(waterPipe)
+    waterPipe.style.left = waterPipeLeft + "px"
+    waterPipe.style.bottom = waterPipeHeight + "px"
+
+    function moveWaterPipe() {
+        waterPipeLeft -= 3
+        waterPipe.style.left = waterPipeLeft + "px"
+    }
+    setInterval(moveWaterPipe, 10)
 }
 createWaterPipe()
