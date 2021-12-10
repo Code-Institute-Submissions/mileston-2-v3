@@ -8,7 +8,15 @@ htpNav.onclick = function() {
     howToPlay.style.display = "block";
 }
 
+window.onclick = function(event) {
+    if (event.target == howToPlay) {
+        howToPlay.style.display = "none";
+    }
+}
+
 close.onclick = function() {
     howToPlay.style.display = "none";
 }
+
+
 

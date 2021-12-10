@@ -77,4 +77,15 @@
 
 
 
-/*------------------------------------- navbar */
+/*------------------------------------- Game */
+
+.game-container {
+    width: 100%;
+    height: 920px;
+    z-index: 1;
+    position: absolute;
+}
+
+.ground {
+    
+}
