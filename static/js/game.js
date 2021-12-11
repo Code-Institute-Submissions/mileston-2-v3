@@ -6,6 +6,7 @@ let gravity = 3
 let dragonHeight = 450
 let dragonLeft = 200
 let isEndGame = false
+let gap = 500
 
 /*------------------------------------------- start game function */
 
@@ -32,16 +33,24 @@ function createWaterPipe() {
     let waterPipeHeight = randomHeight
 
     const waterPipe = document.createElement('div')
-    const waterPipe = document.createElement('div')
+    const topWaterPipe = document.createElement('div')
 
-    if (!isEndGame) waterPipe.classList.add("water-pipe")
+    if (!isEndGame) {
+        waterPipe.classList.add("water-pipe")
+        topWaterPipe.classList.add("top-water-pipe")
+    }
     gameContainer.appendChild(waterPipe)
+    gameContainer.appendChild(topWaterPipe)
+
     waterPipe.style.left = waterPipeLeft + "px"
+    topWaterPipe.style.left = waterPipeLeft + "px"
     waterPipe.style.bottom = waterPipeHeight + "px"
+    topWaterPipe.style.bottom = waterPipeHeight + gap + "px"
 
     function moveWaterPipe() {
         waterPipeLeft -= 3
         waterPipe.style.left = waterPipeLeft + "px"
+        topWaterPipe.style.left = waterPipeLeft + "px"
 
         if (waterPipeLeft === -200) {
             clearInterval(pipeInterval)
