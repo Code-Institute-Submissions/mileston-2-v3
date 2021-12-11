@@ -89,13 +89,24 @@
 position: absolute;
 width: 65px;
 height: 50px;
-background-color: violet;
+background-image: url("../images/dragon.png");
+background-repeat: no-repeat;
 }
 
 .water-pipe {
     width: 200px;
     height: 300px;
-    background-color: turquoise;
+    background-image: url("../images/water-pipe.png");
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.top-water-pipe {
+    width: 200px;
+    height: 300px;
+    background-image: url("../images/water-pipe.png");
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
     position: absolute;
 }
 

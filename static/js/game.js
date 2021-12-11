@@ -32,6 +32,7 @@ function createWaterPipe() {
     let waterPipeHeight = randomHeight
 
     const waterPipe = document.createElement('div')
+    const waterPipe = document.createElement('div')
 
     if (!isEndGame) waterPipe.classList.add("water-pipe")
     gameContainer.appendChild(waterPipe)
@@ -47,8 +48,8 @@ function createWaterPipe() {
             gameContainer.removeChild(waterPipe)
         }
         if (
-            waterPipeLeft > 200 && waterPipeLeft < 270 && dragonLeft === 200 &&
-            dragonHeight < waterPipeHeight + 300|| 
+            waterPipeLeft > 200 && waterPipeLeft < 240 && dragonLeft === 200 &&
+            dragonHeight < waterPipeHeight + 270|| 
             waterPipeHeight === 0
             ) {
             endGame()
