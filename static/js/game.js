@@ -6,7 +6,7 @@ let gravity = 3
 let dragonHeight = 450
 let dragonLeft = 200
 let isEndGame = false
-let gap = 500
+let gap = 400
 
 /*------------------------------------------- start game function */
 
@@ -20,7 +20,7 @@ var gameInterval = setInterval(startGame, 10)
  /*------------------------------------------- flap function */
 
 function flap() {
-    if (dragonHeight < 700) dragonHeight += 150
+    if (dragonHeight < 700) dragonHeight += 100
     dragon.style.bottom = dragonHeight + "px"
     console.log(dragonHeight)
 }
@@ -57,8 +57,8 @@ function createWaterPipe() {
             gameContainer.removeChild(waterPipe)
         }
         if (
-            waterPipeLeft > 200 && waterPipeLeft < 240 && dragonLeft === 200 &&
-            dragonHeight < waterPipeHeight + 270|| 
+            waterPipeLeft > 200 && waterPipeLeft < 205 && dragonLeft === 200 &&
+            (dragonHeight < waterPipeHeight + 300|| dragonHeight > waterPipeHeight + gap -45) ||
             waterPipeHeight === 0
             ) {
             endGame()
@@ -73,5 +73,6 @@ createWaterPipe()
 function endGame() {
     clearInterval(gameInterval)
     console.log("Game Over")
-    isEndGame = true    
+    isEndGame = true   
+    gameOver.style.display = "block" 
 }
