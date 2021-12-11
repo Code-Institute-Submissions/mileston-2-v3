@@ -54,6 +54,7 @@
 .htp-body {
     background-color: white;
     padding-bottom: 5px;
+    float: left;
 }
 
 .htp-box {
