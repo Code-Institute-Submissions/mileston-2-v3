@@ -1,108 +1,190 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Flappy Dragon
 
-Welcome Robertl231,
+My project is a click / tapping javascript game called "Flappy Dragon", inspired by the hit game flappy bird. This game is very simple, all you have to do is click or tap your screen
+to fly your dragon between the deadly water pipes.
+ 
+## UX
+### Targeted User
+* This website is targeted at gamers that are interested in video games.
+* People of all ages.
+* Have an interest in mobile style games.
+* Enjoy trying to get go as far as you possibly can within a video game.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+### User Story
+1. As a new user to this Website, I want to easily navigate the website so i can find 
+the information i need.
+2. As a new user to this Website, I want important information I need on the home page so
+I can make a decision quicker.
+3. As a new user to this Website, I want to be able to know what this website is about and what it can do.
+4. As a new user to this Website, I want to know how to play the game that is being shown.
+5. As a new user to this Website, I want to be able to play the game as easily as possible. 
+6. As a new user to this Website, I want to know when the game has ended.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+### Wireframes
+My wireframes can be found within my files as seen bellow.
 
-## Gitpod Reminders
+#### Wireframe 1.o
+Stored in this repository as "wireframe-1.0.pdf"
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Features
+* Each page features the same navigation bar to create consistency
+throughout the webpage.
+* Each page is also reponsive.
+* The home page features a hero image with overlayed text, this hero image is the first thing 
+you see when you load up the webpage and it is supposed to grab the users attention and tell the user what the website is about.
+* There is a how to play button in the navigation menu that triggers a pop up on how to play the game.
+* There is a play now button in the navigation bar which allows the user to play the game imediately. 
+ 
+### Existing Features
+* Navigation Bar - allows user to easily navigate the entire website. Exists on every page 
+* Home Page (index.html) - Allows user to get all information that they would need in order 
+to make a decision on if they would like to play the game, such as what to expect the game to be about, and how to navigate the site.
+* How to play button - Pop up that allows user to understand how the game is played. 
+* Play The Game (game.html) - Allows user to allows user to play the game.
 
-`python3 -m http.server`
+### Features Left to Implement
+* A feature I would like to implement in the future would be video a video tutorial in the how to play pop-up, so that a user can get
+a even better understanding of how to play the game.
+* A high score counter so the user knows how far they got.
+* Sound Effects
+* Allow users to share their high score via social media.
 
-A blue button should appear to click: _Make Public_,
+## Technologies Used
+* This website uses HTML programming language.
+* This website uses CSS programming language.
+* This website uses Javascript programming language.
+* This website uses Bootstrap CDN. bootstrap was used to ensure a responsive and consistent 
+website. [https://www.bootstrapcdn.com/] 
 
-Another blue button should appear to click: _Open Browser_.
+## Testing
+W3C Markup Validation ans W3C CSS Validation were used to validate the code of the website.
+* [https://validator.w3.org/]
+* [https://jigsaw.w3.org/css-validator/]
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+### Testing User Stories
+1. As a new user to this Website, I want to easily navigate the website so i can find 
+the information i need.
+* The navigation bar can be easily found on every page of the website.
+* When you hover on the links in the navigation bar, the links change color to let the user know what they are about to click.
 
-Another blue button should appear to click: _Open Browser_.
+2. As a new user to this Website, I want important information I need on the home page so
+I can make a decision quicker.
+* The hero image has core information overlayed on to it about the Website
+* The user is presented with all information needed to make a decision on wheter to continue or not.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+3. As a new user to this Website, I want to be able to know what this website is about and what it can do.
+* The Home page has all information imediately available to the user.
 
-To log into the Heroku toolbelt CLI:
+4. As a new user to this Website, I want to know how to play the game that is being shown.
+* The navigation bar on the top of the page has a how to play button that triggers a pop up for the user on how to play.
+* Information on the home page tells you how to find information on how to play the game.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+5. As a new user to this Website, I want to be able to play the game as easily as possible. 
+* Information on the home page tells you how you can play the game imediately.
+* The navigation bar on the top of the page has a play now button that brings you directy to the game.
+* The game only requires one input from the user, a click.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+6. As a new user to this Website, I want to know when the game has ended.
+* Once the game has ended or the user fails, a popup is triggered congratulating the user and letting them know the game is over.
 
-------
+### Manually testing functionality of the website
+#### Home Page:
+1. Navigation Bar:
+* Go to the homepage with a desktop screen size.
+* Hover over "home", "how to play" and "Play now" ensureing that the text changes colour when hovering
+and colour goes away when you finish hovering.
+* Click on each link making sure that you arive to the correct destination.
+* Change screen size from desktop to tablet to make sure the navigation bar is responsive and
+that there is no overflow issues.
+* Change screensize from tablet to mobile and repeat the above step.
+* Repeat these steps again using a mobile device and a tablet.
 
-## Release History
+2. Hero image / Overlayered text:
+* Go to the homepage with a desktop screen size
+* Make sure image take up 100% of the width.
+* Make sure transparent layer completely covers image
+* Ensure overlayed text is in the correct position and is easy to read
+* Change screen size from desktop to tablet checking responsiveness of the image and the text.
+* Change screen size from tablet to mobile and repeat the above step. 
+* Repeat these steps again using a mobile device and a tablet.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+3. How to play button:
+* Go to the homepage with a desktop screen size
+* Click the how to play button ensureing the pop up does pop up
+* Ensure the pop up has a header with a title
+* Ensure the pop up has a main content section detailing how to play.
+* Allow user to click out of the popup
+* Repeat on every page.
+* Change screen size from desktop to tablet to make sure the all content responds properly and
+that there is no overflow issues with padding or margins.
+* Change screen size from tablet to mobile and repeat the above step.
+* Repeat these steps again using a mobile device and a tablet.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+#### Play Now Page:
+1. Navigation Bar:
+* Repeat the same steps for navigation bar on Home Page
+* Ensure the code is identical
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+2. Game:
+* Game should start imdediately
+* Clicking only the game area only should make the dragon fly
+* Dragon should not be able to fly off of the top of the screen
+* Waterpipes should move towards the dragon
+* Waterpipes should contiuously spawn until pipes are hit by dragon
+* When dragon hits a pip the game should end and trigger game over pop up.
+* Change screen size from tablet to mobile and repeat the above step.
+* Repeat these steps again using a mobile device and a tablet
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+3. Game Over pop-Up:
+* Once game over is triggered a pop up should be triggered
+* ensure pop up has a header with correct content
+* Ensure the pop up has a main content section detailing correct information.
+* Allow user to click out of the popup
+* Ensure this pop up only triggers from the game.html page.
+* Change screen size from tablet to mobile and repeat the above step.
+* Repeat these steps again using a mobile device and a tablet
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### More Testing
+1. Asked family and friends to look at the site to see if they could find any bugs. 
+(This happened after I had done all my own testing and they were unable to find any bugs)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Deployment
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### This project was deployed using Github Pages using github repositories
+1. Go to github.com
+2. Sign into your account
+3. On the Left handside you sould see a list of your repositories, click the repository
+you wish to deploy.
+4. Click on the settings tab in your repository
+5. Click "options" within settings on the left tab 
+6. Scroll down until you see the heading Github Pages
+7. Select branch "master" and click save
+8. A page is then automatically deployed using your username as a domain name
+(you also have the choice of uding a custom domain)
+9. In my case my deployed with the domain https://github.com/Robertl231/mileston-2-v3
+### How to run this project locally
+You will need a Github account and a browser (chrome)
+1. Install the gitpod chrome extension to your browser. 
+[https://www.gitpod.io/docs/browser-extension/]
+2. After installation, go to github.com and find this project repository.
+[https://github.com/Robertl231/mileston-2-v3] 
+3. Click on the green "Gitpod Button" in the top right above the repository.
+4. Once this is done the site will create a new workspace for this project.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Credits
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Content
+All Content is my own unless stated otherwise here or in the form of comments in the html 
+code
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Media
+#### The photos used in this site were obtained from sources listed below:
+1. gallery-1.jpg
+[https://depositphotos.com/portfolio-1032932.html]
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Acknowledgements
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+I would like to thank my Mentor Miguel for all his help and guidance, aswell as my friends and family
