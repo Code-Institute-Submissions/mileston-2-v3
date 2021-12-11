@@ -47,5 +47,6 @@ function createWaterPipe() {
         }
     }
     let pipeInterval = setInterval(moveWaterPipe, 10)
+    setTimeout(createWaterPipe, 2000)
 }
 createWaterPipe()
