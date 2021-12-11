@@ -182,11 +182,11 @@ code
 ### Media
 #### The photos used in this site were obtained from sources listed below:
 1. dragon.png
-[https://depositphotos.com/portfolio-1032932.html]
+[https://pngtree.com/freepng/hand-drawn-image-of-the-dragon-in-the-western-mythology-world-western-dragon-image-west-dragon-shape_3807402.html]
 2. hero-dragon.png
-[https://depositphotos.com/portfolio-1032932.html]
+[https://www.wallpapermaiden.com/wallpaper/25335/dragon-flying-artwork-ocean/download/1920x1080]
 3. water-pipe.png
-[https://depositphotos.com/portfolio-1032932.html]
+[https://pngtree.com/element/down?id=NTQwMzAyMQ==&type=1&time=1639090964&token=ZTRjYjYxNzg0NzY3NDg2ODkzYzEzOWY0OGVkZmJmYTY=]
 
 
 ### Acknowledgements
