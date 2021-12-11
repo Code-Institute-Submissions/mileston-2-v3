@@ -5,6 +5,7 @@ const dragon = document.querySelector(".dragon")
 let gravity = 3
 let dragonHeight = 450
 let dragonLeft = 200
+let isEndGame = false
 
 /*------------------------------------------- start game function */
 
@@ -13,7 +14,7 @@ function startGame() {
     dragon.style.left = dragonLeft + "px"
     dragonHeight -= gravity
 }
-setInterval(startGame, 10)
+var gameInterval = setInterval(startGame, 10)
 
  /*------------------------------------------- flap function */
 
@@ -32,7 +33,7 @@ function createWaterPipe() {
 
     const waterPipe = document.createElement('div')
 
-    waterPipe.classList.add("water-pipe")
+    if (!isEndGame) waterPipe.classList.add("water-pipe")
     gameContainer.appendChild(waterPipe)
     waterPipe.style.left = waterPipeLeft + "px"
     waterPipe.style.bottom = waterPipeHeight + "px"
@@ -45,8 +46,22 @@ function createWaterPipe() {
             clearInterval(pipeInterval)
             gameContainer.removeChild(waterPipe)
         }
+        if (
+            waterPipeLeft > 200 && waterPipeLeft < 270 && dragonLeft === 200 &&
+            dragonHeight < waterPipeHeight + 300|| 
+            waterPipeHeight === 0
+            ) {
+            endGame()
+            clearInterval(pipeInterval)
+        }
     }
-    let pipeInterval = setInterval(moveWaterPipe, 10)
-    setTimeout(createWaterPipe, 2000)
+    var pipeInterval = setInterval(moveWaterPipe, 10)
+    if (!isEndGame) setTimeout(createWaterPipe, 2000)
 }
 createWaterPipe()
+
+function endGame() {
+    clearInterval(gameInterval)
+    console.log("Game Over")
+    isEndGame = true    
+}
