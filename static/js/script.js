@@ -21,7 +21,7 @@ close.onclick = function() {
 // Game over pop-up
 
 var gameOver = document.getElementById("game-over");
-var close = document.getElementsByClassName("btn-close")[0];
+var gameClose = document.getElementsByClassName("game-close")[0];
 
 gameOver.onclick = function() {
     gameOver.style.display = "block";
@@ -33,6 +33,6 @@ window.onclick = function(event) {
     }
 }
 
-close.onclick = function() {
+gameClose.onclick = function() {
     gameOver.style.display = "none";
 }
