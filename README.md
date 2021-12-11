@@ -181,7 +181,11 @@ code
 
 ### Media
 #### The photos used in this site were obtained from sources listed below:
-1. gallery-1.jpg
+1. dragon.png
+[https://depositphotos.com/portfolio-1032932.html]
+2. hero-dragon.png
+[https://depositphotos.com/portfolio-1032932.html]
+3. water-pipe.png
 [https://depositphotos.com/portfolio-1032932.html]
 
 
