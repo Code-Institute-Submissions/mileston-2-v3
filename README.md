@@ -157,11 +157,10 @@ that there is no overflow issues with padding or margins.
 3. On the Left handside you sould see a list of your repositories, click the repository
 you wish to deploy.
 4. Click on the settings tab in your repository
-5. Click "options" within settings on the left tab 
-6. Scroll down until you see the heading Github Pages
-7. Select branch "master" and click save
-8. A page is then automatically deployed using your username as a domain name
-(you also have the choice of uding a custom domain)
+5. Click "Pages" within settings on the left tab 
+6. Select branch "main" and click save
+7. A page is then automatically deployed using your username as a domain name
+(you also have the choice of using a custom domain)
 9. In my case my deployed with the domain https://github.com/Robertl231/mileston-2-v3
 ### How to run this project locally
 You will need a Github account and a browser (chrome)
@@ -174,6 +173,10 @@ You will need a Github account and a browser (chrome)
 
 
 ## Credits
+
+### These videos were used in order to help and inspire my website
+1. [https://www.youtube.com/watch?v=3SsYZDJdeXk&ab_channel=KnifeCircus]
+2. [https://www.youtube.com/watch?v=8xPsg6yv7TU&t=3103s&ab_channel=freeCodeCamp.org]
 
 ### Content
 All Content is my own unless stated otherwise here or in the form of comments in the html 
