@@ -53,6 +53,7 @@
 
 .htp-body {
     background-color: white;
+    padding-bottom: 5px;
 }
 
 .htp-box {
@@ -138,6 +139,7 @@
 
 .game-over-body {
     background-color: white;
+    padding-bottom: 5px;
 }
 
 .game-over-box {
