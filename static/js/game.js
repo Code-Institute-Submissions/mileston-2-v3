@@ -26,7 +26,7 @@ function flap() {
 /*------------------------------------------- create water pipe function */
 
 function createWaterPipe() {
-    let waterPipeLeft = 500
+    let waterPipeLeft = 2000
     let randomHeight = Math.random() * 150
     let waterPipeHeight = randomHeight
 
@@ -40,7 +40,12 @@ function createWaterPipe() {
     function moveWaterPipe() {
         waterPipeLeft -= 3
         waterPipe.style.left = waterPipeLeft + "px"
+
+        if (waterPipeLeft === -200) {
+            clearInterval(pipeInterval)
+            gameContainer.removeChild(waterPipe)
+        }
     }
-    setInterval(moveWaterPipe, 10)
+    let pipeInterval = setInterval(moveWaterPipe, 10)
 }
 createWaterPipe()
